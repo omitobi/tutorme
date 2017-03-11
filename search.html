@@ -42,11 +42,11 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#main-header">Home</a></li>
                 <li class=""><a href="#feature">About</a></li>
-                <li class=""><a href="#service">Services</a></li>
-                <li class=""><a href="#portfolio">Portfolio</a></li>
-                <li class=""><a href="#testimonial">Testimonial</a></li>
-                <li class=""><a href="#blog">Blog</a></li>
-                <li class=""><a href="#contact">Contact Us</a></li>
+                <li class=""><a href="#">Services</a></li>
+                <li class=""><a href="#">Portfolio</a></li>
+                <li class=""><a href="#">Testimonial</a></li>
+                <li class=""><a href="#">Blog</a></li>
+                <li class=""><a href="#">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -57,15 +57,48 @@
           <div class="row">
             <div class="banner-info text-center wow fadeIn delay-05s">
               <!--<h1 class="bnr-title">We are at Tutor<span>Me</span></h1>-->
-              <div class="row"></div>
+              <!--<div class="row"></div>
               <h2 class="bnr-sub-title">Needing a Tutor?</h2>
               <p class="bnr-title" style="font-size: 23px">You can easily find the best tutor to make that subject easy for you<br> With a simple search!</p>
-              <div class="brn-btn">
-                <a href="#" class="btn btn-download">Find it here!</a>
-                <!--<a href="#" class="btn btn-more">Find it here!</a>-->
-              </div>
+              &lt;!&ndash;<div class="brn-btn">&ndash;&gt;
+                &lt;!&ndash;<a href="#" class="btn btn-download">Find it here!</a>&ndash;&gt;
+                &lt;!&ndash;&lt;!&ndash;<a href="#" class="btn btn-more">Find it here!</a>&ndash;&gt;&ndash;&gt;
+              &lt;!&ndash;</div>&ndash;&gt;
               <div class="overlay-detail">
                 <a href="#feature"><i class="fa fa-angle-down"></i></a>
+              </div>-->
+
+              <div class="row">
+
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+
+                  <h2 class="service-title pad-bt15 center-block">Search for a Tutor!</h2>
+
+                  <label for="searcher">Search: </label>
+                  <div class="input-group">
+
+                    <div class="input-group-btn search-panel">
+                      <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="searcher" id="searcher">
+                        <option>All</option>
+                        <option>Subject</option>
+                        <option>Location</option>
+                      </select>
+                    </div>
+
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Search term...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                  </div>
+
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+              <div class="row">
+
               </div>
             </div>
           </div>
@@ -77,30 +110,7 @@
     <!---->
     <section id="feature" class="section-padding wow fadeIn delay-05s">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <h2 class="service-title pad-bt15 center-block">Search for a Tutor!</h2>
-            <div class="input-group">
-              <div class="input-group-btn search-panel">
-                <label for="searcher">Search: </label>
-                <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="searcher" id="searcher">
-                  <option>All</option>
-                  <option>Username</option>
-                  <option>Email</option>
-                  <option>Student Code</option>
-                </select>
-              </div>
-              <input type="hidden" name="search_param" value="all" id="search_param">
-              <input type="text" class="form-control" name="x" id="" placeholder="Search term...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                    </span>
-            </div>
 
-          </div>
-          <div class="col-md-3"></div>
-        </div>
       </div>
     </section>
     <!---->
