@@ -13,22 +13,26 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flipcards.css">
     <!-- =======================================================
         Theme Name: Baker
         Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
         Author: BootstrapMade.com
         Author URL: https://bootstrapmade.com
     ======================================================= -->
+
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
   <body>
 
     <div class="loader"></div>
     <div id="myDiv">
     <!--HEADER-->
-    <div class="header">
-      <div class="bg-color">
+      <div>
         <header id="main-header">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgba(64,75,97, 0.9)">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -52,116 +56,260 @@
           </div>
         </nav>
         </header>
+      </div>
+    <!--/ HEADER-->
 
+    <section class="section-padding wow fadeIn delay-05s">
 
-        <div class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="banner-info text-center wow fadeIn delay-05s">
-              <!--<h1 class="bnr-title">We are at Tutor<span>Me</span></h1>-->
-              <!--<div class="row"></div>
-              <h2 class="bnr-sub-title">Needing a Tutor?</h2>
-              <p class="bnr-title" style="font-size: 23px">You can easily find the best tutor to make that subject easy for you<br> With a simple search!</p>
-              &lt;!&ndash;<div class="brn-btn">&ndash;&gt;
-                &lt;!&ndash;<a href="#" class="btn btn-download">Find it here!</a>&ndash;&gt;
-                &lt;!&ndash;&lt;!&ndash;<a href="#" class="btn btn-more">Find it here!</a>&ndash;&gt;&ndash;&gt;
-              &lt;!&ndash;</div>&ndash;&gt;
-              <div class="overlay-detail">
-                <a href="#feature"><i class="fa fa-angle-down"></i></a>
-              </div>-->
+    </section>
 
-              <div class="row">
+    <!---->
+    <section class="section-padding wow fadeIn delay-05s">
+      <div class="container">
 
-                <div class="col-md-3"></div>
+        <div class="row" align="center">
+          <h6 class="service-title pad-bt15 center-block">Search for a Tutor!</h6>
+        </div>
+        <div class="row">
 
-                <div class="col-md-6">
+          <div class="col-md-3"></div>
 
-                  <h2 class="service-title pad-bt15 center-block">Search for a Tutor!</h2>
+          <div class="col-md-6">
 
-                  <label for="searcher">Search: </label>
-                  <div class="input-group">
+            <div class="input-group">
 
-                    <div class="input-group-btn search-panel">
-                      <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="searcher" id="searcher">
-                        <option>All</option>
-                        <option>Subject</option>
-                        <option>Location</option>
-                      </select>
-                    </div>
+              <div class="input-group-btn search-panel">
+                <select class="btn btn-default dropdown-toggle input-group-lg" data-toggle="dropdown" name="searcher" id="searcher">
+                  <option>All</option>
+                  <option>Subject</option>
+                  <option>Location</option>
+                </select>
+              </div>
 
-                    <input type="hidden" name="search_param" value="all" id="search_param">
-                    <input type="text" class="form-control" name="x" placeholder="Search term...">
+              <input type="hidden" name="search_param" value="all" id="search_param">
+              <input type="text" class="form-control" name="x" placeholder="Search term...">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                     </span>
-                  </div>
-
-                </div>
-                <div class="col-md-3"></div>
-              </div>
-              <hr>
-              <!--Search result-->
-              <div class="row" style="background-color: white">
-                <div class="row"></div>
-                <div class="row">
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="blog-sec">
-                      <div class="blog-img">
-                        <a href="">
-                          <img src="img/blog01.jpg" class="img-responsive">
-                        </a>
-                      </div>
-                      <div class="blog-info">
-                        <h2>This is Lorem ipsum heading.</h2>
-                        <p>A specialist in Mathematics</p>
-                        <a href="profile.html" class="read-more">View Profile →</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="blog-sec">
-                      <div class="blog-img">
-                        <a href="">
-                          <img src="img/blog02.jpg" class="img-responsive">
-                        </a>
-                      </div>
-                      <div class="blog-info">
-                        <h2>This is Lorem ipsum heading.</h2>
-                        <p>A specialist in Mathematics</p>
-                        <a href="profile.html" class="read-more">View Profile →</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="blog-sec">
-                      <div class="blog-img">
-                        <a href="">
-                          <img src="img/blog03.jpg" class="img-responsive">
-                        </a>
-                      </div>
-                      <div class="blog-info">
-                        <h2>This is Lorem ipsum heading.</h2>
-                        <p>A specialist in Mathematics</p>
-                        <a href="profile.html" class="read-more">View Profile →</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Search result ends-->
-              <hr>
             </div>
 
-
           </div>
+          <div class="col-md-3"></div>
         </div>
-        </div>
-      </div>
-    </div>
-    <!--/ HEADER-->
-    <!---->
-    <section id="feature" class="section-padding wow fadeIn delay-05s">
-      <div class="container">
+        <hr>
+        <!--Search result-->
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-md-4 col-sm-6">
+              <div class="card-container manual-flip">
+                <div class="card">
+                  <div class="front">
+                    <div class="cover">
+                      <img src="https://www.clipartsgram.com/image/129556292-kyz84k3.jpg"/>
+                    </div>
+                    <div class="user">
+                      <img class="img-circle" src="https://www2.mmu.ac.uk/media/mmuacuk/style-assets/images/r-research/profile-Zeyad.jpg"/>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h3 class="name">John Marvel</h3>
+                        <p class="profession">Mathematics Specialist</p>
+                        <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                      </div>
+                      <div class="footer">
+                        <i class="fa fa-user-o"></i><a href="profile.html"> View profile </a>
+                        <!--<i class="fa fa-mail-forward"></i> Auto Rotation-->
+                      </div>
+                    </div>
+                  </div> <!-- end front panel -->
+                  <div class="back">
+                    <div class="header">
+                      <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h4 class="text-center">Job Description</h4>
+                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                        <div class="stats-container">
+                          <div class="stats">
+                            <h4>235</h4>
+                            <p>
+                              Followers
+                            </p>
+                          </div>
+                          <div class="stats">
+                            <h4>114</h4>
+                            <p>
+                              Following
+                            </p>
+                          </div>
+                          <div class="stats">
+                            <h4>35</h4>
+                            <p>
+                              Projects
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="social-links text-center">
+                        <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                        <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                        <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div> <!-- end back panel -->
+                </div> <!-- end card -->
+              </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+            <!--         <div class="col-sm-1"></div> -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card-container manual-flip">
+                <div class="card">
+                  <div class="front">
+                    <div class="cover">
+                      <img src="https://www.clipartsgram.com/image/124089475-california-beaches-tumblr-wallpaper-3.jpg"/>
+                    </div>
+                    <div class="user">
+                      <img class="img-circle" src="http://www.outbrain.com/risingstars/wp-content/uploads/708x708-RS-Profile-Ashley-Callahan-400x400.jpg"/>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h3 class="name">Andrew Mike</h3>
+                        <p class="profession">Chemistry Geek</p>
+                        <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+                      </div>
+                      <div class="footer">
+                        <!--<button class="btn btn-simple" onclick="rotateCard(this)">
+                          <i class="fa fa-mail-forward"></i> Manual Rotation
+                        </button>-->
+                        <i class="fa fa-user-o"></i><a href="profile.html"> View profile </a>
+                      </div>
+                    </div>
+                  </div> <!-- end front panel -->
+                  <div class="back">
+                    <div class="header">
+                      <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h4 class="text-center">Job Description</h4>
+                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                        <div class="stats-container">
+                          <div class="stats">
+                            <h4>235</h4>
+                            <p>
+                              Followers
+                            </p>
+                          </div>
+                          <div class="stats">
+                            <h4>114</h4>
+                            <p>
+                              Following
+                            </p>
+                          </div>
+                          <div class="stats">
+                            <h4>35</h4>
+                            <p>
+                              Projects
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <!--<button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                        <i class="fa fa-reply"></i> Back
+                      </button>-->
+                      <i class="fa fa-user-o"></i><a href="profile.html"> View profile </a>
+                      <div class="social-links text-center">
+                        <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                        <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                        <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div> <!-- end back panel -->
+                </div> <!-- end card -->
+              </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+            <!--         <div class="col-sm-1"></div> -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card-container manual-flip">
+                <div class="card">
+                  <div class="front">
+                    <div class="cover">
+                      <img src="http://www.hdimageson.com/wp-content/uploads/2016/05/beach-images-tumblr-300x188.jpg"/>
+                    </div>
+                    <div class="user">
+                      <img class="img-circle" src="https://1.bp.blogspot.com/-aruLLVlXyJM/V_t-TxTncZI/AAAAAAAAJ3k/hnQKKVmKuOY_awf1nHGTsukGfw4qrde-gCLcB/s400/2.jpg"/>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h3 class="name">Inna Corman</h3>
+                        <p class="profession">Art's maker</p>
+
+                        <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                      </div>
+                      <div class="footer">
+                        <!--<div class="rating">-->
+                          <!--<i class="fa fa-mail-forward"></i> Auto Rotation-->
+                        <!--</div>-->
+                       <i class="fa fa-user-o"></i><a href="profile.html"> View profile </a>
+                      </div>
+                    </div>
+                  </div> <!-- end front panel -->
+                  <div class="back">
+                    <div class="header">
+                      <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h4 class="text-center">Job Description</h4>
+                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                        <div class="stats-container">
+                          <div class="stats">
+                            <h4>235</h4>
+                            <p>
+                              Followers
+                            </p>
+                          </div>
+                          <div class="stats">
+                            <h4>114</h4>
+                            <p>
+                              Following
+                            </p>
+                          </div>
+                          <div class="stats">
+                            <h4>35</h4>
+                            <p>
+                              Projects
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="social-links text-center">
+                        <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                        <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                        <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div> <!-- end back panel -->
+                </div> <!-- end card -->
+              </div> <!-- end card-container -->
+            </div> <!-- end col-sm-3 -->
+          </div> <!-- end col-sm-10 -->
+        </div> <!-- end row -->
+        <!--Search result ends-->
+        <hr>
 
       </div>
     </section>
@@ -201,7 +349,8 @@
     <script src="js/wow.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
     
   </body>
 </html>
