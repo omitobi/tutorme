@@ -20,6 +20,46 @@
         Author: BootstrapMade.com
         Author URL: https://bootstrapmade.com
     ======================================================= -->
+    <script>
+
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '400',
+          width: '80%',
+          videoId: 'w6vVXmwYvgs',
+          autoplay: 1,
+          loop: 1,
+          showinfo: 0,
+          modestbranding: 1,
+          enablejsapi: 1,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.setVolume(0);
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          //      setTimeout(stopVideo, 6000);
+          done = true;
+        }
+        event.target.setVolume(0);
+      }
+    </script>
+
   </head>
   <body>
 
@@ -41,13 +81,13 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#main-header">Home</a></li>
-                <li class=""><a href="#feature">About</a></li>
-                <li class=""><a href="#portfolio">Our Tutors</a></li>
-                <li class=""><a href="#testimonial">Testimonial</a></li>
+                <li class="active"><a href="#main-header"><b>Home</b></a></li>
+                <li class=""><a href="#feature"><b>About</b></a></li>
+                <li class=""><a href="#portfolio"><b>Our Tutors</b></a></li>
+                <li class=""><a href="#testimonial"><b>Reviews</b></a></li>
                 <!--<li class=""><a href="#blog">Blog</a></li>-->
-                <li class=""><a href="#contact">Contact Us</a></li>
-                <li class="text-danger"><a href="#" onclick="openLoginModal()">Tutor Login</a></li>
+                <li class=""><a href="#contact"><b>Contact Us</b></a></li>
+                <li class="text-danger"><a href="#" onclick="openLoginModal()"><b>Tutor Login</b></a></li>
               </ul>
             </div>
           </div>
@@ -59,12 +99,12 @@
             <div class="banner-info text-center wow fadeIn delay-05s">
               <!--<h1 class="bnr-title">We are at Tutor<span>Me</span></h1>-->
               <div class="row"></div>
-              <h2 class="bnr-sub-title">Need a private Tutor?</h2>
+              <h2 class="bnr-sub-title">NLooking for a tutor?</h2>
               <p class="bnr-title" style="font-size: 23px">You can easily find the best tutor to make that subject easy for you<br> With a simple search!</p>
               <div class="brn-btn">
-                <a href="search.html#searcher" class="btn btn-download">Find it here!</a>
+                <a href="search.html#searcher" class="btn btn-download"><b>Find it here!</b></a>
                 <!--<a href="#" class="btn btn-more">Find it here!</a>-->
-                <button type="button" href="#" onclick="openRegisterModal()" class="btn btn-more" >Register as a Tutor</button>
+                <button type="button" href="#" onclick="openRegisterModal()" class="btn btn-more" style="color: rgba(64,75,97, 0.9);"><b>Register as a Tutor</b></button>
               </div>
               <div class="overlay-detail">
                 <a href="#feature"><i class="fa fa-angle-down"></i></a>
@@ -132,59 +172,63 @@
             <p class="sub-title pad-bt15">Meet with our excellent, enthusiastic and wise teachers who want to share their knowledge with you</p>
             <hr class="bottom-line">
           </div>
+          <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/team/_one.jpg" class="img-responsive">
+            <figure onclick="window.location = 'profile.html';">
+              <img src="img/team2/4_.jpg" class="img-responsive">
               <figcaption>
                   <h2>Nika Kalandarishvili</h2>
-                  <p>Self-motivated personality who takes initiative and responsibility to get things done and teaches English and History.</p>
+                  <p>Active personality who can teach what he has learned just a moment ago</p>
               </figcaption>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/team/_two.jpg" class="img-responsive">
+            <figure onclick="window.location = 'profile.html';">
+              <img src="img/team2/_levan_.jpg" class="img-responsive">
               <figcaption>
                 <h2>Levan Salia</h2>
-                  <p>Self-motivated personality who takes initiative and responsibility to get things done and teaches English and History.</p>
+                  <p>Awesome person who is not afraid to teach even lazy children</p>
               </figcaption>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/team/_three.jpg" class="img-responsive">
+            <figure onclick="window.location = 'profile.html';">
+              <img src="img/team2/_7.jpg" class="img-responsive">
               <figcaption>
                   <h2>Ucha Vekua</h2>
-                  <p>Self-motivated personality who takes initiative and responsibility to get things done and teaches English and History.</p>
+                  <p>He is the person who can teach you how to pitch</p>
               </figcaption>
             </figure>
           </div>
+          </div>
+          <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/team/_four.jpg" class="img-responsive">
+            <figure onclick="window.location = 'profile.html';">
+              <img src="img/team2/karlis2.jpg" class="img-responsive">
               <figcaption>
                   <h2>Karlis Jonass</h2>
-                  <p>Self-motivated personality who takes initiative and responsibility to get things done and teaches English and History.</p>
+                  <p>Personality who can teach football and software engineering.</p>
               </figcaption>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/team/_five.jpg" class="img-responsive">
+            <figure onclick="window.location = 'profile.html';">
+              <img src="img/team2/ievan.jpg" class="img-responsive">
               <figcaption>
                   <h2>Ieva Kreituze</h2>
-                  <p>Self-motivated personality who takes initiative and responsibility to get things done and teaches English and History.</p>
+                  <p>Creative person, who likes traveling and hiking,  understands mathematics well, and enjoys helping others to learn.</p>
               </figcaption>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-            <figure>
-              <img src="img/team/tobi_2.png" class="img-responsive">
+            <figure onclick="window.location = 'profile.html';" >
+              <img src="img/team2/tobi3.jpg" class="img-responsive" width="400">
               <figcaption>
                   <h2>Oluwatobi Samuel Omisakin</h2>
                   <p>Self-motivated personality who takes initiative and responsibility to get things done and teaches English and History.</p>
               </figcaption>
             </figure>
+          </div>
           </div>
         </div>
       </div>
@@ -237,7 +281,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <h2 class="service-title pad-bt15">What to Learn?</h2>
-            <p class="sub-title pad-bt15">As Albert Einstein said “I never teach my pupils, I only attempt to provide the conditions in which they can learn.” </p>
+            <p class="sub-title pad-bt15">As Albert Einstein said “I never teach my pupils, I only attempt to provide the conditions in which they can learn” </p>
             <hr class="bottom-line">
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
@@ -248,15 +292,8 @@
                 </a>
               </div>
               <div class="blog-info">
-                <h2>Learning Mathematics.</h2>
-                <div class="blog-comment">
-                    <p>Posted In: <span>Subjects</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
+                <h2>Mathematics</h2>
                 <p>The present age is one of skill-development and innovations. The more mathematical we are in our approach, the more successful we will be. Mathematics offers rationality to our thoughts. It is a tool in our hands to make our life simpler and easier.</p>
-                <a href="" class="read-more">Read more →</a>
               </div>
             </div>
           </div>
@@ -268,15 +305,8 @@
                 </a>
               </div>
               <div class="blog-info">
-                <h2>Learning English language.</h2>
-                <div class="blog-comment">
-                    <p>Posted In: <span>Subjects</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
+                <h2>English language</h2>
                 <p>Language is our primary source of communication. It's the method through which we share our ideas and thoughts with others. Some people even say that language is what separates us from animals and makes us human.</p>
-                <a href="" class="read-more">Read more →</a>
               </div>
             </div>
           </div>
@@ -288,16 +318,15 @@
                 </a>
               </div>
               <div class="blog-info">
-                <h2>Learning History.</h2>
-                <div class="blog-comment">
+                <h2>History</h2>
+                <!--<div class="blog-comment">
                     <p>Posted In: <span>Subjects</span></p>
                     <p>
                       <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
                       <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
+                </div>-->
                 <p>History is such an important subject and plays a very vital role when it comes to shaping of our society. History is the study of past events. We refer to the past when comparing it with the present times and deduce the changes that have taken place.
                 </p>
-                <a href="" class="read-more">Read more →</a>
               </div>
             </div>
           </div>
@@ -314,8 +343,9 @@
               <p class="sub-title pad-bt15">Get inspired in <b>TEDxFargo</b> presentation <i>“Teachers as Learners and Students as Leaders”</i> by Kayla Delzer</p>
               <hr class="bottom-line">
             </div>
-            <iframe width="80%" height="400" class="center-block" src="https://www.youtube.com/embed/w6vVXmwYvgs?autoplay=1&loop=1
-				&playlist=w6vVXmwYvgs&controls=0&showinfo=0&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            <div id="player" class="center-block"></div>
+            <!--<iframe width="80%" height="400" class="center-block" src="https://www.youtube.com/embed/w6vVXmwYvgs?autoplay=1&loop=1-->
+				<!--&playlist=w6vVXmwYvgs&controls=0&showinfo=0&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
           </div>
         </div>
       </section>
@@ -325,7 +355,9 @@
         <div class="row">
           <div class="col-md-12 text-center white">
             <h2 class="service-title pad-bt15">Keep in touch</h2>
-            <p class="sub-title pad-bt15">Want to learn more about this awesome solution for your need?  Leave your message below.</p>
+            <p class="sub-title pad-bt15">
+              Do you want to use this solution to teach of learn? Leave a message, and our team will contact you after the platform is launched in beta version
+            </p>
             <hr class="bottom-line white-bg">
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
@@ -377,7 +409,7 @@
     <footer id="footer">
       <div class="container">
         <div class="row text-center">
-          <p>&copy; Baker Theme. All Rights Reserved.</p>
+          <p>&copy; TutorMe. All Rights Reserved.</p>
           <div class="credits">
             <!-- 
                 All the links in the footer should remain intact. 
@@ -408,7 +440,7 @@
             <div class="content">
               <div class="social">
                 <a class="circle github" href="#">
-                  <i class="fa fa-github fa-fw"></i>
+                  <i class="fa fa-linkedin fa-fw"></i>
                 </a>
                 <a id="google_login" class="circle google" href="#">
                   <i class="fa fa-google-plus fa-fw"></i>
@@ -436,7 +468,7 @@
           <div class="box">
             <div class="content registerBox" style="display:none;">
               <div class="form">
-                <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                <form method="post" html="{:multipart=>true}" data-remote="true" action="profile.html" accept-charset="UTF-8">
                   <input class="form-control" type="text" placeholder="Full name" name="fullname">
                   <input id="email" class="form-control" type="text" placeholder="Email" name="email">
                   <input id="password" class="form-control" type="password" placeholder="Password" name="password">
@@ -446,7 +478,7 @@
                     <input type="checkbox" name=""> Mathematics<input type="checkbox"> English<input type="checkbox"> History
                     <input class="form-control" type="text" placeholder="Others" name="others">
                   </div>
-                  <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                  <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
                 </form>
               </div>
             </div>
